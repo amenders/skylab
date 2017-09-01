@@ -1,7 +1,6 @@
 # ember-test
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Skylab is a simple Ember.js application for viewing NASA's APOD photos. It's mostly a chance for me to work with Ember and explore the framework.
 
 ## Prerequisites
 
