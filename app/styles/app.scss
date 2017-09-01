@@ -1,0 +1,89 @@
+@import 'variables';
+
+html, body
+{
+  padding: 0px;
+  margin: 0px;
+}
+
+.application-window
+{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.top-bar
+{
+  position: relative;
+  z-index: 0;
+  background-color: $theme-dark-gray;
+  color: $theme-white;
+  font-family: "Helvetica Neue";
+  font-weight: 200;
+  margin: 0px;
+  padding: 0px;
+  flex: 0 0 100px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.26);
+
+  .primary-search-box
+  {
+    background-color: $theme-dark-gray;
+    width: 500px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .search-box, .search-button
+    {
+      border: none;
+      height: 40px;
+      padding: 0;
+    }
+
+    .search-button
+    {
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+      flex: 0 0 50px;
+      background-color: $theme-blue;
+      color: $theme-white;
+      font-size: 22px;
+    }
+
+    .search-button:active
+    {
+      background-color: $theme-medium-gray;
+    }
+
+    .search-box
+    {
+      text-indent: 10px;
+      background-color: $theme-light-gray;
+      color: $theme-dark-gray;
+      border-bottom-left-radius: 12px;
+      border-top-left-radius: 12px;
+      font-size: 20px;
+      flex: 1 1 auto;
+    }
+
+    .search-box:focus
+    {
+      background-color: $theme-white;
+    }
+  }
+}
+
+.content-view
+{
+  flex: 1 1 auto;
+  overflow-y: auto;
+  background-color: $theme-light-gray;
+}
+
+input:focus, button:focus
+{
+  outline: none;
+}
